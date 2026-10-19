@@ -3,7 +3,7 @@ let dropdown = document.getElementById("colorSelect")
 let button = document.querySelector("input")
 
 button.onclick = function () {
-    let selectelem = dropdown.selectedIndex;
+    let selectelem = dropdown.option[dropdown.selectedIndex];
 
-    dropdown.remove(selectelem)
+    selectelem.remove()
 } 
